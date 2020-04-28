@@ -4,15 +4,24 @@ function check(){
 	var question1 = document.quiz.question1.value;
 	var question2 = document.quiz.question2.value;
 	var question3 = document.quiz.question3.value;
+	var question4 = document.quiz.question4.value;
+	var question5 = document.quiz.question5.value;
+	var question6 = document.quiz.question6.value;
+	var question7 = document.quiz.question7.value;
+	var question8 = document.quiz.question8.value;
+	var question9 = document.quiz.question9.value;
+	var question10 = document.quiz.question10.value;
 	var correct = 0;
 
 
 	if (question1 == "rake db:migrate") {
 		correct++;
-}
+	}
+
 	if (question2 == "Automatically generates the models, views and controllers you need for a table") {
 		correct++;
-}
+	}
+
 	if (question3 == "It accepts a request and dispatches a response from the Rails application") {
 		correct++;
 	}
@@ -37,7 +46,7 @@ function check(){
 		correct++;
 	}
 
-	if (question9 == "A method") {
+	if (question9 == "method") {
 		correct++;
 	}
 
@@ -45,21 +54,27 @@ function check(){
 		correct++;
 	}
 
-	var pictures = ["img/win.gif", "img/meh.jpeg", "img/lose.gif"];
-	var messages = ["Great job!", "That's just okay", "You really need to do better"];
+	var pictures = ["win.jpg", "almost.jpg", "lose.jpg"];
+	var messages = ["Perfect!", "Not quite!", "Better luck next time..."];
 	var score;
 
-	if (correct == 0) {
-		score = 2;
-	}
+	if (correct < 4) {
+			score = 3;
+		}
 
-	if (correct > 0 && correct < 3) {
-		score = 1;
-	}
+	if (correct >= 4 && correct < 6) {
+			score = 2;
+		}
 
-	if (correct == 3) {
-		score = 0;
-	}
+	if (correct >= 6 && correct < 10) {
+			score = 1;
+		}
+
+	if (correct === 10) {
+			score = 0;
+		}
+
+	console.log(score);
 
 	document.getElementById("after_submit").style.visibility = "visible";
 

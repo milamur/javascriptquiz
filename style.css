@@ -29,7 +29,7 @@ input {
 
 
 #button {
-	background: blue;
+	background: #4682B4;
 	border: none;
 	border-radius: 5px;
 	padding: 10px;
@@ -51,7 +51,7 @@ input {
 
 #after_submit {
 	visibility: hidden;
-	background: #ff5459;
+	background: #e08686;
 	padding: 10px 20px 10px 20px;
 	width: 400px;
 	border-radius: 20px;

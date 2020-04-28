@@ -59,7 +59,7 @@ function check(){
 	var score;
 
 	if (correct < 4) {
-			score = 3;
+			score = 2;
 		}
 
 	if (correct >= 4 && correct < 6) {

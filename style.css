@@ -1,14 +1,14 @@
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Arvo', sans-serif;
 }
 
 
 
 #quiz {
 	margin-left: 10px;
-	background: #d2def2;
+	background: #FFF05F;
 	padding: 10px 20px 10px 20px;
-	width: 400px;
+	width: 600px;
 	border-radius: 20px;
 	float: left;
 
@@ -29,7 +29,7 @@ input {
 
 
 #button {
-	background: green;
+	background: blue;
 	border: none;
 	border-radius: 5px;
 	padding: 10px;
@@ -71,4 +71,4 @@ input {
 
 #mc {
 	display: inline;
-} 
+}
